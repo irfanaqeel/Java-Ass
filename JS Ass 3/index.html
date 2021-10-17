@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.html">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- <div>
+    <input  placeholder="Name" id="todo-item">
+    <input  placeholder="Class" id="todo-item1">
+    <button onclick="addTodo()">Add Entry</button>
+</div>
+
+<div>
+    <ol id="list">
+
+    </ol>
+</div> -->
+
+    <!-- <p id="count">0</p> -->
+<!-- <h1>Rules for naming JS variables</h1> -->
+    <!-- <h1>Shopping Cart</h1> -->
+    <!-- <h1>Mark Sheet</h1> -->
+    <!-- <h1>Currency In PKR</h1> -->
+    <!-- <h1>The Geometrizer</h1> -->
+    <!-- <h1>Mark Sheet</h1> -->
+    <!-- <h1>Qualification</h1> -->
+<!--     
+            //***********Chapter # 43 - 48***********\\
+
+
+    <a href="#" onClick="alert('Hi');">Click</a> -->
+<!-- <div style="display: flex;">
+    <div><img onClick="alert('Thanks For Purchasing');" src="https://th.bing.com/th/id/OIP.EfmNnT6eYRQtQyf-JT0Y0QAAAA?w=115&h=172&c=7&o=5&pid=1.7" alt=""></div>
+    <div><img onClick="alert('Thanks For Purchasing');" src="data:image/jpeg;base64,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" alt=""></div>
+    <div><img onClick="alert('Thanks For Purchasing');" src="https://th.bing.com/th/id/OIP.V_0VeIwFz6yaIwJW9gSn0AAAAA?w=127&h=172&c=7&o=5&pid=1.7" alt=""></div>
+    <div><img onClick="alert('Thanks For Purchasing');" src="https://th.bing.com/th/id/OIP.GCxD8m_ZDW6Z39V4sLhe_wAAAA?w=152&h=136&c=7&o=5&pid=1.7" alt=""></div>
+</div> -->
+
+<!-- <table id="myTable">
+
+<tr style="font-weight: bold;">
+    <td>Index</td>
+    <td>Name</td>
+    <td>Class</td>
+    <td></td>
+</tr> -->
+
+<!-- <tr>
+    <td>0</td>
+    <td>Ali</td>
+    <td>10</td>
+    <td><button onclick="myFunction()">Delete</button></td>
+</tr>
+
+<tr>
+    <td>1</td>
+    <td>Arfa</td>
+    <td>10</td>
+    <td><button onclick="myFunction1()">Delete</button></td>
+</tr>
+
+<tr>
+    <td>2</td>
+    <td>Ahmed</td>
+    <td>2</td>
+    <td><button onclick="myFunction2()">Delete</button></td>
+</tr>
+
+<tr>
+    <td>3</td>
+    <td>Khubaib</td>
+    <td>3</td>
+    <td><button onclick="myFunction3()">Delete</button></td>
+</tr>
+
+<tr>
+    <td>4</td>
+    <td>Sajid</td>
+    <td>9</td>
+    <td><button onclick="myFunction4()">Delete</button></td>
+</tr>
+
+<tr>
+    <td>5</td>
+    <td>Arsalam</td>
+    <td>7</td>
+    <td><button onclick="myFunction5()">Delete</button></td>
+</tr>
+
+<tr>
+    <td>6</td>
+    <td>Aliyan</td>
+    <td>4</td>
+    <td><button onclick="myFunction6()">Delete</button></td>
+</tr>
+
+<tr>
+    <td>7</td>
+    <td>Alina</td>
+    <td>1</td>
+    <td><button onclick="myFunction7()">Delete</button></td>
+</tr>
+
+<tr>
+    <td>8</td>
+    <td>Aliya</td>
+    <td>8</td>
+    <td><button onclick="myFunction8()">Delete</button></td>
+</tr>
+
+<tr>
+    <td>9</td>
+    <td>Ahmed</td>
+    <td>5</td>
+    <td><button onclick="myFunction9()">Delete</button></td>
+</tr>
+
+
+</table>  -->
+
+<!-- 
+<img  id="img" onmouseover="changeImg()" onmouseout="changeImgBefore()" src="https://th.bing.com/th/id/OIP.BmNPrwTeA_MRS5GT8BF6gAHaEv?w=290&h=186&c=7&o=5&pid=1.7"alt=""> -->
+
+<!-- <div id="Timer" style="text-align: center;">
+    <div id="msec" class="timer1">
+        0
+    </div>
+</div>
+
+<button id="btn1" onclick="start()" class="but" aria-disabled="false">Start</button>
+<button onclick="stop()" class="but">Pause</button>
+ -->
+<!-- Button to open the modal -->
+<!-- <div>
+<h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button"  class="cancelbtn">Cancel</button>
+        <button type="submit" onclick="document.getElementById('id01').style.display='none'"  class="signup">Sign Up</button>
+      </div>
+    </div> -->
+<!--    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+    <button onclick="myFunction()" id="myBtn">Read more</button>
+ --> 
+<!-- 
+ <form action="#" name="StudentRegistration" onsubmit="return(validate());">
+
+    <table cellpadding="2" width="20%" bgcolor="99FFFF" align="center"
+    cellspacing="2">
+    
+    <tr>
+    <td colspan=2>
+    <center><font size=4><b>Student Registration Form</b></font></center>
+    </td>
+    </tr>
+    
+    <tr>
+    <td>Name</td>
+    <td><input type=text name=textnames id="textname" size="30"></td>
+    </tr>
+    
+    <tr>
+    <td>Father Name</td>
+    <td><input type="text" name="fathername" id="fathername"
+    size="30"></td>
+    </tr>
+    <tr>
+    <td>Postal Address</td>
+    <td><input type="text" name="paddress" id="paddress" size="30"></td>
+    </tr>
+    
+    <tr>
+    <td>Personal Address</td>
+    <td><input type="text" name="personaladdress"
+    id="personaladdress" size="30"></td>
+    </tr>
+    
+    <tr>
+    <td>Sex</td>
+    <td><input type="radio" name="sex" value="male" size="10">Male
+    <input type="radio" name="sex" value="Female" size="10">Female</td>
+    </tr>
+    
+    
+    <tr>
+    <td>Course</td>
+    <td><select name="Course">
+    <option value="-1" selected>select..</option>
+    <option value="B.Tech">B.TECH</option>
+    <option value="MCA">MCA</option>
+    <option value="MBA">MBA</option>
+    <option value="BCA">BCA</option>
+    </select></td>
+    </tr>
+    
+    <tr>
+    <td>EmailId</td>
+    <td><input type="text" name="emailid" id="emailid" size="30"></td>
+    </tr>
+    
+    <tr>
+    <td>DOB</td>
+    <td><input type="text" name="dob" id="dob" size="30"></td>
+    </tr>
+    
+    <tr>
+    <td><input type="reset"></td>
+    <td colspan="2"><input type="submit" value="Submit Form" /></td>
+    </tr>
+    </table>
+    </form>--!
+     -->
+
+     <!-- //***********Chapter # 52 - 58***********\\ -->
+     
+
+<!-- <div style="text-align: center;">
+    <img onclick="showImage(this)"  data-toggle="modal" data-target="#exampleModal" class="img" src="images/1.jpg" alt="">
+    <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" class="img" src="images/2.jpg" alt="">
+    <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" class="img" src="images/3.jpg" alt="">
+    <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" class="img" src="images/4.png" alt="">
+</div>
+
+
+
+<!<button type="button" class="btn btn-primary" >
+    Launch demo modal
+  </button> -->
+  
+  <!-- Modal -->
+  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div >
+        <div class="modal-body" style="text-align: center;">
+          <img class="bigImage" src="" alt="" id="modalImage">
+        </div>
+        <div >
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+     <!-- //***********Chapter # 58 - 67***********\\ -->
+<!-- 
+<div>
+        <h1> DOM </h1>
+    <div id="form-content"  class="content">
+        <label for="first-name">First Name</label>
+        <input type="text" id="firstname" />
+        <label for="last-name">Last Name</label>
+        <input type="text" id="lastName" />
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+    </div>
+    <div id="main-content" class="content">
+        <p class="render"> First Name : Alex</p>
+        <p class="render" id="lastName">Last Name: Bank</p>
+        <p class="render"> Email : alexbank@example.com</p>
+        <p class="render"> Country : Pakistan </p>
+        <p class="render"> contact : +92 300 1234567</p>
+    </div>
+</div> -->
+<!-- 
+<div>
+    <button onclick="myAlert()">Click me</button>
+</div> -->
+
+
+    </body>
+<script src="app.js"></script>
+</html>
